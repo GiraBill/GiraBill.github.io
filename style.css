@@ -49,6 +49,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center; /* центрируем ссылки */
 }
 
 nav a {
@@ -75,6 +76,9 @@ nav a.active::after {
     cursor: pointer;
     color: white;
     margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* центрируем кнопку */
 }
 
 #themeToggle:hover {
@@ -140,10 +144,15 @@ main > * {
 }
 
 /* ===== СПИСКИ ===== */
-ul {
-    list-style-position: inside;
-    text-align: left;
-    margin-top: 10px;
+ul, ol {
+    list-style-position: inside; /* маркеры внутри */
+    text-align: center;           /* центрируем текст */
+    padding-left: 0;              /* убираем стандартный отступ слева */
+    margin: 10px auto;            /* центрирование блока списка */
+}
+
+ul li, ol li {
+    margin-bottom: 5px;           /* отступ между элементами списка */
 }
 
 /* ===== НАВЫКИ ===== */
@@ -267,7 +276,7 @@ footer {
 
     header .container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* меняем с flex-start на center */
     }
 
     nav {
