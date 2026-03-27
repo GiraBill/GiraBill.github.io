@@ -2,55 +2,64 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проекты</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="about.html">О себе</a>
-        <a href="projects.html" class="active">Проекты</a>
-        <a href="contact.html">Контакты</a>
-    </nav>
-    <button id="themeToggle">Сменить тему</button>
+    <div class="container">
+        <h1>Моё портфолио</h1>
+
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О себе</a>
+            <a href="projects.html" class="active">Проекты</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+
+        <button id="themeToggle">Сменить тему</button>
+    </div>
 </header>
 
 <main>
-    <h1>Мои проекты</h1>
+    <section class="container">
+        <h1>Мои проекты</h1>
 
-    <div>
-        <h3>Личный сайт-портфолио</h3>
+        <div>
+            <h3>Личный сайт-портфолио</h3>
+            <p>
+                Мой первый веб-сайт, созданный с использованием HTML и CSS.
+            </p>
+            <p><strong>Технологии:</strong> HTML, CSS</p>
+            <a href="#">Сайт</a> |
+            <a href="#">GitHub</a>
+            <br>
+            <img src="https://via.placeholder.com/200" alt="Проект">
+        </div>
+
+        <div>
+            <h3>Достижения</h3>
+            <p>Некоторые мои достижения:</p>
+            <ul>
+                <li>Участие в любительской лиге по волейболу</li>
+                <li>16 место среди юниоров по стрельбе из лука (2020)</li>
+                <li>Навыки приготовления тортов</li>
+            </ul>
+        </div>
+
+        <h2>Будущие проекты</h2>
         <p>
-            Мой первый веб-сайт, созданный с использованием HTML и CSS.
+            Планирую создать полноценное веб-приложение и улучшить свои навыки в JavaScript.
         </p>
-        <p><strong>Технологии:</strong> HTML, CSS</p>
-        <a href="#">Сайт</a> |
-        <a href="#">GitHub</a>
-        <br>
-        <img src="https://via.placeholder.com/200" alt="Проект">
-    </div>
-
-    <div>
-        <h3>Достижения</h3>
-        <p>Некоторые мои достижения:</p>
-        <ul>
-            <li>Участие в любительской лиге по волейболу</li>
-            <li>16 место среди юниоров по стрельбе из лука (2020)</li>
-            <li>Навыки приготовления тортов</li>
-        </ul>
-    </div>
-
-    <h2>Будущие проекты</h2>
-    <p>
-        Планирую создать полноценное веб-приложение и улучшить свои навыки в JavaScript.
-    </p>
-
+    </section>
 </main>
 
 <footer>
-    <p>© 2026 Дунаевский Владимир</p>
+    <div class="container">
+        <p>© 2026 Дунаевский Владимир</p>
+    </div>
 </footer>
 
 <script src="script.js"></script>
