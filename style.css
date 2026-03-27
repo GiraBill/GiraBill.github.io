@@ -12,6 +12,17 @@ body {
     line-height: 1.6;
 }
 
+/* ===== ГЛОБАЛЬНЫЕ ССЫЛКИ ===== */
+a {
+    text-decoration: none;
+    color: #4b3f38;
+    transition: 0.2s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
 /* ===== Контейнер ===== */
 .container {
     width: 90%;
@@ -30,25 +41,19 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* важно для адаптива */
+    flex-wrap: wrap;
 }
 
 /* ===== НАВИГАЦИЯ ===== */
 nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #4b3f38;
     font-weight: 500;
     position: relative;
-}
-
-nav a:hover {
-    opacity: 0.7;
 }
 
 nav a.active::after {
@@ -76,9 +81,21 @@ nav a.active::after {
     background-color: #a8927f;
 }
 
+/* ===== MAIN (ЦЕНТРИРОВАНИЕ) ===== */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main > * {
+    width: 100%;
+    max-width: 800px;
+}
+
 /* ===== HERO ===== */
 .hero {
-    text-align: center;
     padding: 60px 0;
 }
 
@@ -105,7 +122,6 @@ nav a.active::after {
     padding: 10px 20px;
     background-color: #bfa996;
     color: #ffffff;
-    text-decoration: none;
     border-radius: 20px;
     transition: 0.3s ease;
 }
@@ -123,11 +139,19 @@ nav a.active::after {
     background-color: #dcccbb;
 }
 
+/* ===== СПИСКИ ===== */
+ul {
+    list-style-position: inside;
+    text-align: left;
+    margin-top: 10px;
+}
+
 /* ===== НАВЫКИ ===== */
 .skills-grid {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 20px 0;
 }
 
@@ -153,13 +177,27 @@ nav a.active::after {
     border-radius: 10px;
 }
 
+/* ссылки проектов как кнопки */
+.project a {
+    display: inline-block;
+    margin: 5px 5px 0;
+    padding: 5px 10px;
+    background-color: #bfa996;
+    border-radius: 10px;
+    color: white;
+}
+
+.project a:hover {
+    background-color: #a8927f;
+}
+
 /* ===== ФОРМА ===== */
 form {
     display: flex;
     flex-direction: column;
     max-width: 400px;
     width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 form input,
@@ -225,8 +263,6 @@ footer {
 }
 
 /* ===== АДАПТИВ ===== */
-
-/* 📱 Телефоны */
 @media (max-width: 768px) {
 
     header .container {
@@ -249,10 +285,10 @@ footer {
 
     .skills-grid {
         flex-direction: column;
+        align-items: center;
     }
 }
 
-/* 📱 Очень маленькие экраны */
 @media (max-width: 480px) {
 
     .container {
