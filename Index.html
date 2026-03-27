@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="container">
-            <h1>Моё Портфолио</h1>
+            <h1>Моё портфолио</h1>
+
             <nav>
-                <a href="#about">Обо мне</a>
-                <a href="#skills">Навыки</a>
-                <a href="#contacts">Контакты</a>
+                <a href="index.html" class="active">Главная</a>
+                <a href="about.html">О себе</a>
+                <a href="projects.html">Проекты</a>
+                <a href="contact.html">Контакты</a>
             </nav>
+
+            <button id="themeToggle">Сменить тему</button>
         </div>
     </header>
 
@@ -23,68 +27,27 @@
 
         <section class="hero">
             <div class="container hero-content">
-                <img src="https://i.pravatar.cc/500" alt="Аватар" class="avatar">
-                <h2>Привет! Я Дунаевский Владимир</h2>
-                <p class="subtitle">Студент</p>
-                <p class="goal">Изучаю всё что интересно</p>
-                <a href="#contacts" class="btn">Связаться</a>
-            </div>
-        </section>
+                <img src="https://i.pravatar.cc/300" alt="Аватар" class="avatar">
 
-        <section id="about" class="section">
-            <div class="container">
-                <h2>Обо мне</h2>
-                <p><strong>Город:</strong> Павлодар</p>
-                <p><strong>Университет:</strong> ПГУ</p>
-                <p><strong>Специальность:</strong> Computer science</p>
-                <p class="bio">
-                    Студент 1 курса, интересуюсь различными сферами жизни
+                <h2>Привет! Я Дунаевский Владимир</h2>
+
+                <p class="subtitle">Студент направления Computer Science</p>
+
+                <p class="goal">
+                    Изучаю веб-разработку и стремлюсь стать профессиональным разработчиком
                 </p>
 
-                <h3>Интересы</h3>
-                <ul>
-                    <li>Моделирование</li>
-                    <li>Кулинария</li>
-                    <li>Волейбол</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="skills" class="section alt-bg">
-            <div class="container">
-                <h2>Навыки</h2>
-
-                <h3>Технические</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">CSS</div>
-                    <div class="skill-card">Текстурирование</div>
-                    <div class="skill-card">Кондитерское дело</div>
-                </div>
-
-                <h3>Мягкие навыки</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">Ответственность</div>
-                    <div class="skill-card">Быстрая обучаемость</div>
-                </div>
+                <a href="contact.html" class="btn">Связаться</a>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <h2>Достижения</h2>
-                <ul>
-                    <li>Участие в любительское лиге по волейболу</li>
-                    <li>16 место среди юниоров по стрельбе из лука в марте 2020 года</li>
-                    <li>Умение готовить простые торты</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="contacts" class="section alt-bg">
-            <div class="container">
-                <h2>Контакты</h2>
-                <p>Email: shon39406@mail.com</p>
-                <p>Номер: 87072939681</p>
+                <h2>Краткое описание</h2>
+                <p>
+                    Это мой личный сайт-портфолио. Здесь вы можете узнать больше обо мне,
+                    моих навыках и проектах.
+                </p>
             </div>
         </section>
 
@@ -92,9 +55,10 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 Дунаевский Владимир CS-106(c)</p>
+            <p>© 2026 Дунаевский Владимир</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
