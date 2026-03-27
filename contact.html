@@ -2,49 +2,58 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="about.html">О себе</a>
-        <a href="projects.html">Проекты</a>
-        <a href="contact.html" class="active">Контакты</a>
-    </nav>
-    <button id="themeToggle">Сменить тему</button>
+    <div class="container">
+        <h1>Моё портфолио</h1>
+
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О себе</a>
+            <a href="projects.html">Проекты</a>
+            <a href="contact.html" class="active">Контакты</a>
+        </nav>
+
+        <button id="themeToggle">Сменить тему</button>
+    </div>
 </header>
 
 <main>
-    <h1>Контакты</h1>
+    <section class="container">
+        <h1>Контакты</h1>
 
-    <h2>Форма обратной связи</h2>
-    <form>
-        <input type="text" placeholder="Имя" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Сообщение" required></textarea>
-        <button type="submit">Отправить</button>
-    </form>
+        <h2>Форма обратной связи</h2>
+        <form>
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
 
-    <h2>Контактная информация</h2>
-    <p>Email: shon39406@mail.com</p>
-    <p>Телефон: 87072939681</p>
+        <h2>Контактная информация</h2>
+        <p>Email: shon39406@mail.com</p>
+        <p>Телефон: 87072939681</p>
 
-    <h3>Социальные сети</h3>
-    <p>
-        <a href="#">Telegram</a> |
-        <a href="#">Instagram</a> |
-        <a href="#">LinkedIn</a>
-    </p>
+        <h3>Социальные сети</h3>
+        <p>
+            <a href="#">Telegram</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
 
-    <p><a href="#">GitHub</a></p>
-
+        <p><a href="#">GitHub</a></p>
+    </section>
 </main>
 
 <footer>
-    <p>© 2026 Дунаевский Владимир</p>
+    <div class="container">
+        <p>© 2026 Дунаевский Владимир</p>
+    </div>
 </footer>
 
 <script src="script.js"></script>
