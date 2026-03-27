@@ -5,6 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О себе</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Контейнер для центрирования содержимого */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Навигация */
+        header nav {
+            display: flex;
+            justify-content: center; /* центрируем ссылки */
+            gap: 20px; /* расстояние между ссылками */
+            margin: 10px 0;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        header nav a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Центровка кнопки темы */
+        #themeToggle {
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* Основной контент */
+        main section h1,
+        main section h2,
+        main section h3,
+        main section p,
+        main section ul {
+            text-align: center; /* Центрируем текст */
+        }
+
+        /* Списки */
+        main section ul {
+            list-style-position: inside; /* маркеры внутри */
+            padding-left: 0; /* убираем левый отступ */
+            margin: 10px auto; /* центрирование блока списка */
+        }
+
+        /* Отступы для элементов списка */
+        main section li {
+            margin-bottom: 5px;
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
 
@@ -33,9 +93,7 @@
         <p><strong>Специальность:</strong> Computer Science</p>
 
         <h2>Краткая биография</h2>
-        <p>
-            Студент 1 курса, интересуюсь различными сферами жизни и активно развиваюсь в IT.
-        </p>
+        <p>Студент 1 курса, интересуюсь различными сферами жизни и активно развиваюсь в IT.</p>
 
         <h2>Интересы</h2>
         <ul>
@@ -62,9 +120,7 @@
         <p>Спорт (волейбол), кулинария, моделирование</p>
 
         <h2>Цели</h2>
-        <p>
-            Развиваться в сфере веб-разработки и стать профессиональным IT-специалистом.
-        </p>
+        <p>Развиваться в сфере веб-разработки и стать профессиональным IT-специалистом.</p>
     </section>
 </main>
 
